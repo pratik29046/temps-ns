@@ -69,7 +69,7 @@ header {
 .main {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: fit-content;
     background-color: #FCFBFB;
     border: #000000;
     border-top-left-radius: 18px;
@@ -102,7 +102,7 @@ header {
 }
 
 .form-control {
-    width: 98%;
+    width: 100%;
     height: 30px;
     border: 2px solid #F1F0F6;
     border-radius: 14px;
@@ -112,18 +112,104 @@ header {
 }
 
 .recyle {
-    display: grid;
+    display: flex;
+    width: 100%;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    grid-template-columns:repeat(3,auto);
-    column-gap: 10px;
+   flex-direction: row;
+   flex: auto;
 }
 
 #img img{
     border-radius:10%;
+    margin-left: 30px;
 }
 
 #info{
-    height: 80px;
+    display:flex;
+    height:80px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex: auto;
+    text-align: start;
+    margin: 0px;
+
+}
+
+#info h4{
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-weight: bold;
+
+}
+#info h6{
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left:20px;
+    color: #A0A1C1;
+    font-size:10px;
+    font-weight: 500;
+
+}
+#info p{
+    margin-top: 28px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    margin-left:20px;
+    color: #6F8CA6;
+    font-style: normal;
+
+}
+
+#icons{
+    display:flex;
+    width: 80px;
+    height:80px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex: auto;
+    text-align: start;
+    margin: 0px;
+    gap: 10px;
+    margin-top: 20px;
+    align-content: flex-start;
+    margin-right: 20px;
+    justify-content: end;
+    gap: 10px;
+}
+
+#icons img{
+    margin-right: 20px;
+}
+
+
+.recyle2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+   flex: auto;
+}
+.recyle3 {
+    display: flex;
+    width: 100%;
+   flex-direction: row;
+   flex: auto;
+}
+.recyle4 {
+    display: flex;
+    width: 100%;
+   flex-direction: row;
+   flex: auto;
+}
+.recyle5 {
+    display: flex;
+    width: 100%;
+   flex-direction: row;
+   flex: auto;
+}
+.recyle6 {
+    display: flex;
+    width: 100%;
+   flex-direction: row;
+   flex: auto;
 }

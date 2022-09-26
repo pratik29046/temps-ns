@@ -25,10 +25,11 @@ body{
 
 .container header{
     position: relative;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 25px;
     color: #333;
     text-align: center;
+    font-weight: bold;
+
 }
 
 .container header::before{
@@ -36,15 +37,15 @@ body{
     position: absolute;
     bottom: -2px;
     height: 3px;
-    width: 77px;
+    width: 120px;
     border-radius: 8px;
-    background-color: #4070f4;
+    background-color: #f13413;
     text-align: center;
 }
 
 .container form{
     position: relative;
-    min-height: 490px;
+    min-height: fit-content;
     margin-top: 16px;
     background-color: #fff;
 }
@@ -74,8 +75,6 @@ form .field .input-filed{
     width: calc(100% / 1 - 50px);
     flex-direction: column;
     margin: 4px 0px 10px 20px;
-
-
 }
 
 .input-filed label{
@@ -83,7 +82,10 @@ form .field .input-filed{
     font-weight: 500;
     color: black;
     text-align: left;
-    margin-left: 2px;
+    margin-left: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: bolder;
 }
 
 .input-filed input{
@@ -100,7 +102,8 @@ form .field .input-filed{
 }
 
 .input-filed input:is(:focus,:valid){
-    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+    box-shadow: 0px 10px 6px rgba(46, 20, 20, 0.13);
+   
 }
 
 .input-filed input[type="date"]{
@@ -125,5 +128,18 @@ form .field .input-filed{
 }
 
 
+.error.display-error{
+    display: block;
+    margin-bottom: -5px;
+    color: red;
+    width: fit-content;
+    text-align: left;
 
+}
 
+.error{
+    display: none;
+    color: yellow;
+    background-color: #fff;
+    padding: 10px;
+}
